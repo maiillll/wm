@@ -39,6 +39,7 @@ h1, h2 {
     margin-bottom: 8px;
 }
 
+/* --- PERBARUI BAGIAN INI --- */
 .form-group input[type="text"],
 .form-group input[type="number"] {
     width: 100%;
@@ -46,7 +47,10 @@ h1, h2 {
     border: 1px solid #ddd;
     border-radius: 6px;
     box-sizing: border-box; /* Pastikan padding tidak merusak lebar */
+    font-size: 15px; /* Menyamakan ukuran font */
 }
+/* ------------------------- */
+
 
 /* Tombol */
 .btn-simpan {
