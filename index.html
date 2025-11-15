@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Stok Barang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Manajemen Stok Barang</h1>
+
+        <div class="card">
+            <h2>Input Barang Baru</h2>
+            <form id="formBarang">
+                <div class="form-group">
+                    <label for="jenisBarang">Jenis Barang</label>
+                    <input type="text" id="jenisBarang" placeholder="cth: Elektronik, Pakaian, Makanan" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipeBarang">Tipe/Model Barang</label>
+                    <input type="text" id="tipeBarang" placeholder="cth: TV LED 32 inch, Kemeja Pria" required>
+                </div>
+                <div class="form-group">
+                    <label for="hargaBarang">Harga (Rp)</label>
+                    <input type="number" id="hargaBarang" placeholder="cth: 1500000" required>
+                </div>
+                <button type="submit" class="btn-simpan">Simpan Barang</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Daftar Barang</h2>
+            <table id="tabelBarang">
+                <thead>
+                    <tr>
+                        <th>Jenis Barang</th>
+                        <th>Tipe/Model</th>
+                        <th>Harga (Rp)</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="listBarang">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
